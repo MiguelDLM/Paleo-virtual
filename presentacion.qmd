@@ -1,0 +1,225 @@
+---
+title: "Curso de Paleontología Virtual"
+subtitle: "Técnicas de Paleontología mediante recursos digitales"
+author: "M. en C. E. Miguel Díaz de León Muñoz - Tübingen Universität" 
+date: "2025-11-25"
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 2
+    theme: 
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    code-fold: false
+    number-sections: true
+    smooth-scroll: true
+    anchor-sections: true
+    fig-cap-location: bottom
+    link-external-newwindow: true
+  pdf:
+    documentclass: article
+    papersize: letter
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
+    fig-pos: 'htbp'
+    fontsize: 11pt
+execute:
+  echo: false
+---
+
+# Paleontología Virtual
+
+
+## Sobre este curso
+
+La paleontología virtual es una nueva disciplina dentro de la paleontología que se centra en el uso de técnicas digitales y computacionales novedosas para el estudio de la vida en el pasado.
+
+Una de las herramientas más valiosas de las que hace uso es el uso de **modelos 3D**, los cuales pueden ser creados mediante diferentes técnicas que abordaremos a lo largo de este curso, así como las herramientas y técnicas que disponemos para su análisis.
+
+Esta nueva perspectiva de trabajar en paleontología nos permite trabajar con infinidad de grupos taxonómicos de todo el mundo sin necesidad de visitar personalmente las colecciones científicas o poseer vastas colecciones científicas en nuestra institución. Esto potencia y elimina barreras especialmente para investigadores de países en vías de desarrollo, los cuales constantemente enfrentan la limitación de recursos económicos para realizar sus proyectos.
+
+### Sede del curso
+
+Esta primera edición del curso se llevará a cabo en las instalaciones de la **Escuela Nacional de Estudios Superiores (ENES)** de la **Universidad Nacional Autónoma de México (UNAM)**, Campus Mérida.
+
+---
+
+
+## Objetivo general
+
+
+Proporcionar una introducción a las más recientes técnicas y tecnologías aplicadas en el estudio de los fósiles mediante herramientas digitales, enfocándose en la **creación, análisis e interpretación de modelos 3D** para la investigación paleontológica.
+
+
+## Objetivos específicos
+
+- Conocer los métodos de obtención de modelos 3D de fósiles mediante fotogrametría, escaneo láser y tomografía computarizada.
+- Aprender a procesar y optimizar modelos 3D para su análisis y visualización.
+- Aplicar técnicas de reconstrucción digital, retro-deformación y preparación virtual de especímenes fósiles.
+- Conocer las herramientas de software gratuito y de código abierto disponibles para el análisis paleontológico digital.
+- Aplicar las técnicas de análisis biomecánico y morfométrico en modelos 3D de fósiles.
+
+### Objetivos secundarios
+
+Adicionalmente, al impartir este curso a través de la ENES Mérida, se busca:
+
+- Fortalecer la colaboración académica entre instituciones
+- Fomentar el desarrollo de habilidades digitales en estudiantes y profesionales de la región
+- Complementar la oferta educativa en ciencias de la Tierra y biología
+
+::: {.callout-tip}
+## Contexto geográfico e histórico
+
+La posición geográfica de **Mérida, Yucatán**, es estratégica para el estudio de la paleontología debido a su papel histórico y cultural en la investigación de la vida en el pasado. Es en esta región donde, en la década de los 80's, se comenzó a postular que se habría producido el impacto de un gran asteroide que causó la **extinción masiva del Cretácico-Paleógeno** hace 66 millones de años, evento clave en la historia de la Tierra.
+
+Desde esta perspectiva, la impartición del curso abre la puerta a una mayor difusión e interés en el estudio de la vida en el pasado, los procesos evolutivos y de extinción, así como la importancia de la conservación del patrimonio biológico y paleontológico de la región y del país.
+:::
+
+
+---
+
+## Público objetivo
+
+Este curso está dirigido a:
+
+- **Estudiantes** de licenciatura y posgrado en:
+  - Ciencias de la Tierra
+  - Biología
+  - Arqueología
+  - Disciplinas afines
+
+- **Profesionales e investigadores** interesados en la aplicación de técnicas digitales en paleontología:
+  - Curadores de museos
+  - Divulgadores científicos
+  - Técnicos de laboratorio
+  - Investigadores paleontológicos
+
+---
+
+## Estructura del curso (temario)
+
+### Módulo 1: Fundamentos
+
+1. **[Introducción a la Paleontología Virtual](tema-1-introduccion.qmd)**  
+   *Definición, historia y métodos*
+
+2. **[Bases de datos y repositorios digitales](tema-2-bases-datos.qmd)**  
+   *Acceso y uso de recursos en línea (MorphoSource, Sketchfab, Phenome10k, etc.)*
+
+### Módulo 2: Creación de Modelos 3D
+
+3. **[Creación de Modelos 3D de Fósiles](tema-3-obtencion-modelos.qmd)**  
+   *Generalidades y técnicas. Comparación de métodos. Ventajas, desventajas y limitaciones*
+
+   3.1. **[Fotogrametría](tema-3-1-fotogrametria.qmd)**  
+   *Fundamentos y flujo de trabajo (Agisoft Metashape)*
+
+   3.2. **[Escaneo láser](tema-3-2-escaneo-laser.qmd)**  
+   *Escaneo y procesamiento básico (Skanect)*
+
+   3.3. **[Tomografía computarizada](tema-3-3-tomografia.qmd)**  
+   *Procesamiento y segmentación de archivos DICOM (3D Slicer)*
+
+4. **[Procesamiento y Optimización de Modelos 3D](tema-4-procesamiento-modelos.qmd)**  
+   *Limpieza, reparación y reducción de polígonos (Blender)*
+
+### Módulo 3: Análisis Avanzados
+
+5. **[Reconstrucción muscular](tema-5-reconstruccion-muscular.qmd)**  
+   *Reconstrucción digital de músculos en modelos 3D de fósiles para la estimación de propiedades biomecánicas (Blender y MyoGeneratorRemix addon)*
+
+6. **[Análisis de Elementos Finitos (FEA)](tema-6-analisis-fea.qmd)**  
+   *Fundamentos y aplicación en paleontología (Blender, BFEX addon y Fossils solver)*
+
+7. **[Análisis de apertura mandibular](tema-7-analisis-apertura-mandibular.qmd)**  
+   *Estimación de fuerzas máximas de mordida, apertura mandibular máxima y eficiencia mecánica en modelos 3D de cráneos fósiles (Blender y MUDYS addon)*
+
+8. **[Morfometría Geométrica en Paleontología](tema-8-morfometria-geometrica.qmd)**  
+   *Aplicaciones y análisis estadísticos (MorphoJ y R)*
+
+
+
+---
+
+## Metodología
+
+El curso combina **módulos teóricos** con **ejercicios prácticos** y presentaciones visuales. Se recomienda revisar las presentaciones previas a cada sesión y consultar los recursos adicionales que se indiquen en cada tema.
+
+### Modalidad híbrida
+
+- **Presencial**: Sesiones en la ENES Mérida para estudiantes locales, con resolución de dudas y problemas técnicos.
+- **Remoto**: Transmisión en vivo de las sesiones y grabaciones disponibles para consulta posterior.
+
+
+---
+
+## Recursos y enlaces
+
+### Material de apoyo
+
+- Material de referencia (bibliografía recomendada) y lecturas complementarias estarán disponibles en cada tema.
+- Se solicitará a los participantes contar con una computadora con las especificaciones mínimas necesarias para ejecutar el software requerido durante el curso.
+- Se proporcionarán alternativas y recomendaciones para optimizar el rendimiento en equipos con limitaciones técnicas.
+
+### Software utilizado
+
+::: {.callout-tip}
+## Accesibilidad y código abierto
+
+Durante el curso se priorizará el uso de **software gratuito y de código abierto** para garantizar la accesibilidad a todos los participantes, independientemente de sus recursos económicos o ubicación geográfica. Se proporcionarán instrucciones detalladas para la instalación y configuración del software necesario. Para el caso de software comercial, se buscarán versiones de prueba gratuitas o alternativas accesibles.
+:::
+
+#### Herramientas principales
+
+- **[3D Slicer](https://www.slicer.org/)**  
+  Plataforma de código abierto para visualización y análisis de imágenes médicas, utilizada para la segmentación de datos de tomografía computarizada.
+
+- **[Agisoft Metashape](https://www.agisoft.com/)**  
+  Software comercial para la creación de modelos 3D mediante fotogrametría. Durante el curso se utilizará una versión de prueba gratuita.
+
+- **[Blender](https://www.blender.org/)**  
+  Software de modelado 3D de código abierto utilizado para el procesamiento y análisis de modelos 3D.
+
+#### Complementos (addons) para Blender
+
+- **[MyoGeneratorRemix](https://github.com/MiguelDLM/MyoGeneratorRemix)**  
+  Facilita la reconstrucción digital de músculos en modelos 3D para la estimación de propiedades biomecánicas en Blender.
+
+- **[BFEX](https://github.com/MiguelDLM/BFEX)**  
+  Facilita la construcción de análisis de elementos finitos (FEA) en modelos 3D en Blender.
+
+- **[MUDYS](https://github.com/MiguelDLM/MUDYS)**  
+  Facilita el análisis de apertura mandibular en modelos 3D. Estimación de fuerzas máximas de mordida, apertura mandibular máxima y eficiencia mecánica en Blender.
+
+#### Solución FEA
+
+- **[Fossils](https://gitlab.uliege.be/rboman/fossils)**  
+  Solución de software para realizar análisis de elementos finitos (FEA).
+
+---
+
+## Contacto
+
+::: {.callout-note}
+## Instructor
+
+**M. en C. E. Miguel Díaz de León Muñoz**  
+PhD Candidate - Tübingen Universität
+
+📧 **Correos electrónicos:**
+
+- `contacto@museovirtualnacional.com`
+- `migueldlm1307@gmail.com`
+
+Para dudas, coordinación o información adicional sobre el curso, no dude en ponerse en contacto.
+:::
+
